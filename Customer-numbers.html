@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="متجر متخصص في داتا أرقام وبيانات العملاء. بيانات وايميلات الشركات السعودية. استخراج بيانات الشركات السعودية والمصانع والمتاجر الإلكترونية. داتا أرقام للتسويق">
+    <meta name="keywords"
+        content="ارقام عملاء, داتا عملاء, ارقام للتسويق, ارقام داتا عملاء, ارقام سعودية للتسويق, قاعدة بيانات ارقام واتساب, ارقام جوالات, ايميلات الشركات السعودية">
+    <title> اتا أرقام عملاء| متجر داتا</title>
+    <!-- ========= This site has been optimized using meta SEO ========= -->
+    <meta property="og:title"
+        content="متخصصون في استخراج البيانات من مواقع الويب, استخراج بيانات الشركات السعودية والمصانع والمتاجر الإلكترونية, ونوفر داتا مصنفة ومخصصة حسب الطلب" />
+    <meta property="og:description"
+        content="متجر متخصص في داتا أرقام وبيانات العملاء. بيانات وايميلات الشركات السعودية">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:image:width" content="2500">
+    <meta property="og:image:height" content="1330">
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="متجر داتا العملاء" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="متجر متخصص في داتا أرقام وبيانات العملاء" />
+    <!-- ========= favicon icon ========= -->
+    <link rel="shortcut icon" href="assets/images/favicon icon.png" type="image/x-icon">
+    <!-- ========= Custom css link ========= -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ========= cdn Aos link ========= -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ========= font awesome link ========= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- ========= Buttom-whatsapp ========= -->
+    <div class="whatsapp-btn-container ">
+        <i class="fa-brands fa-whatsapp whatsapp-btn"></i>
+    </div>
+
+    <!-- ========= preloder ========= -->
+    <div class="spinner-contuner">
+        <div id="preloder"></div>
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!--====== notifications =======-->
+    <div class="notifications">
+    </div>
+
+    <header class="header">
+        <audio id="notification-sound" src="assets/images/message notification sound.mp3"></audio>
+        <audio id="notification-sound-two" src="assets/images/sound Hart.mp3"></audio>
+        <div class="header-container">
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars-staggered" onclick="toggleMenu()"></i>
+                <span class="menu-text">القائمة</span>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img class="logo-imag" src="assets/images/logo.png" alt="Logo"></a>
+            </div>
+            <div class="icons">
+                <span class="icon-item">
+                    <i class="fas fa-user"></i>
+                    <i class="fa-solid fa-bag-shopping">
+                        <span id="cart-count">0</span>
+                    </i>
+                    <a href="https://wa.me//966505661617" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </span>
+            </div>
+        </div>
+        <nav class="dropdown-menu">
+            <div class="menu-header">
+                <h2 id="menu-title">
+                    القائمة الرئيسية
+                    <i id="back-arrow" class="fas fa-chevron-right" style="display: none;"></i>
+                </h2>
+                <i class="fas fa-times" onclick="toggleMenu()"></i>
+            </div>
+            <ul id="main-menu">
+                <li><a href="index.html"> الصفحة الرئيسية</a></li>
+                <li><a  onclick="openSubMenu('plastics-menu')">المنتجات المتجر<i
+                            class="fas fa-chevron-left"></i></a></li>
+                <li><a href="index.html#services"> الخدمات </a></li>
+                <li><a href="AboutUS.html">من نحن </a></li>
+                <li><a href="index.html#Advantages">مزايا المتجر </a></li>
+                <li><a href="index.html#Customer-reviews">رأي العملاء</a></li>
+                <li><a href="index.html#footer"> تواصل معنا</a></li>
+                <li><a href="index.html#accordion">أسئلة مهمة <i class="fas fa-link"></i></a></li>
+            </ul>
+
+            <ul id="plastics-menu" style="display: none;">
+                <li><a href="For-job-seekers.html">قاعدة بيانات للباحثين عن عمل  </a></li>
+                <li><a href="Saudi-companies.html">داتا دليل الشركات السعودية </a></li>
+                <li><a href="Electronic-stores.html">داتا دليل المتاجر الإلكتورنية السعودية</a></li>
+                <li><a href="Customer-numbers.html"> داتا أرقام عملاء | 1000 رقم</a></li>
+                <li><a href="Customer-numbers2.html"> داتا أرقام عملاء | 2000 رقم</a></li>
+                <li><a href="Customer-numbers3.html"> داتا أرقام عملاء | 5000 رقم</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- l[df d ofdmfdl lf d] -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <a href="index.html"><img src="assets/images/cropped-image.png" alt=""></a>
+            <span class="chat-title">الدعم الفني - متجر داتا</span>
+            <button class="close-btn" id="closeChat"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chat-body">
+            <p class="chat-subtitle">نقوم بالرد في أقرب وقت</p>
+            <ul class="chat-list">
+                <li> -حياك الله نورتنا 👀🤍</li>
+                <li> -لاتردد في التواصل معنا</li>
+                <li> -بإمكانك ارسال استفسارك وسيتم الرد عليك بأقرب وقت 🫶🏻🤍</li>
+            </ul>
+        </div>
+        <div class="chat-footer">
+            <a href="https://wa.me//966505661617" target="_blank">
+                <button class="send-btn"><i class="fa-brands fa-whatsapp"></i> ارسل استفسارك</button>
+            </a>
+        </div>
+    </div>
+    <div class="body-all">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html" class="home-link">الرئيسية</a> > <a href="#"> داتا أرقام عملاء | 1000 رقم</a>
+            </div>
+        </div>
+
+        <div class="container-products">
+            <div class="product-card">
+                <img src="assets/images/داتا أرقام عملاء 1000.png" alt="صورة المنتج">
+                <div class="product-info">
+                    <h4> داتا أرقام عملاء | 1000 رقم</h4>
+                    <p>42.00 ر.س</p>
+                    <div class="quantity-control">
+                        <button id="minusBtn"><i class="fas fa-minus"></i></button>
+                        <span id="quantity">1</span>
+                        <button id="plusBtn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <p class="price-all">42.00 ر.س</p>
+            </div>
+
+            <div class="product-card-two">
+            <!-- ملخص الطلب -->
+                <h3>ملخص الطلب</h3>
+                <div class="summary-row">
+                    <span>مجموع المنتجات</span>
+                    <span>42.00 ر.س</span>
+                </div>
+                <hr>
+                <div class="discount-code-titel">هل لديك كود خصم</div>
+                <div class="discount-code">
+                    <input type="text" id="discount-code" placeholder="ادخل كود الخصم">
+                    <button>إضافة</button>
+                </div>
+                <hr>
+                <div class="summary-row total">
+                    <span>الإجمالي</span>
+                    <span> 42.00 ر.س</span>
+                </div>
+                <p class="note">* الأسعار شاملة للضريبة</p>
+                <a href="https://wa.me//966505661617" target="_blank">
+                    <button class="complete-order">إتمام الطلب</button>
+                </a>
+            </div>
+        </div>
+
+    <div class="container main-content">
+        <section>
+            <div class="title-h2">
+                <h2 class="section-title">المنتجات أخرة</h2>
+                <div class="loader"></div>
+            </div>
+            <div class="contaner-card">
+                <div class="card card-store" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="assets/images/داتا أرقام عملاء 5000.png" alt="Product Image" loading="lazy">
+                    <div class="card-title card-title-store"> داتا أرقام عملاء | 5000 رقم </div>
+                    <div class="price">
+                        <div class="card-price">190 ر.س</div>
+                        <div class="rating">
+                            <span>5</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="Customer-numbers3.html"  class="add-to-cart ">
+                            أشتري الان
+                            <i class="fa-solid fa-bag-shopping "></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="card card-store" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="assets/images/قاعدة بيانات للباحثين عن عمل.png" alt="Product Image" loading="lazy">
+                    <div class="card-title card-title-store">قاعدة بيانات للباحثين عن عمل </div>
+                    <div class="price">
+                        <div class="card-price">89 ر.س</div>
+                        <div class="rating">
+                            <span>5</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="For-job-seekers.html"   class="add-to-cart "> <i class="fa-solid fa-bag-shopping"></i>
+                            أشتري الان
+                        </a>
+                    </div>
+                </div>
+                <div class="card card-store" data-aos="fade-up" data-aos-duration="2500">
+                    <img src="assets/images/داتا دليل الشركات السعودية.png" alt="Product Image" loading="lazy">
+                    <div class="card-title card-title-store">داتا دليل الشركات السعودية </div>
+                    <div class="price">
+                        <div class="card-price">129 ر.س</div>
+                        <div class="rating">
+                            <span>5</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="Saudi-companies.html"   class="add-to-cart "> <i class="fa-solid fa-bag-shopping"></i>
+                            أشتري الان
+                        </a>
+                    </div>
+                </div>
+                <div class="card card-store" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="assets/images/داتا أرقام عملاء 2000.png" alt="Product Image" loading="lazy">
+                    <div class="card-title card-title-store">داتا أرقام عملاء | 2000 رقم </div>
+                    <div class="price">
+                        <div class="card-price">80 ر.س</div>
+                        <div class="rating">
+                            <span>5</span>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <a href="Customer-numbers2.html"  class="add-to-cart ">
+                            <i class="fa-solid fa-bag-shopping "></i>
+                            أشتري الان
+                        </a>
+    
+                    </div>
+                </div>
+        </div>
+        </section>
+    </div>
+    <footer>
+        <div class="flex-col">
+            <a href="index.html"><img src="assets/images/logo.png" width="120" height="120" alt=""></a>
+            <p>متخصصون في استخراج البيانات من مواقع الويب, استخراج بيانات الشركات السعودية والمصانع والمتاجر الإلكترونية, ونوفر داتا مصنفة ومخصصة حسب الطلب.</p>
+            <div class="footer-social">
+                <ul class="socail-links">
+                    <a href="#"><li><i class="fa-brands fa-square-x-twitter"></i></li></a>
+                    <a href="https://wa.me//966505661617" target="_blank"><li><i class="fa-brands fa-square-whatsapp"></i></li></a>
+                    <a href="#"><li><i class="fa-brands fa-square-instagram"></i></li></a>
+                    <a href="#"><li><i class="fa-brands fa-tiktok"></i></li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="flex-col">
+            <div class="menu-list">
+                <h3>روابط مهمة</h3>
+                <div class="footer-list">
+                    <a href="#services">الخدمات</a>
+                    <a href="AboutUS.html">من نحن</a>
+                    <a href="index.html#Customer-reviews">رأي العملاء</a>
+                    <a href="index.html#Advantages"> مزايا المتجر</a>
+                    <a href="index.html#accordion">أسئلة مهمة</a>
+                    <a href="Saudi-companies.html">داتا دليل الشركات </a>
+                    <a href="For-job-seekers.html">  للباحثين عن عمل </a>
+                    <a href="Electronic-stores.html"> داتا دليل المتاجر</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-col">
+            <h3>تواصل معنا</h3>
+            <div class="contact-links">
+                <a href=""><i class="fa-brands fa-square-x-twitter"></i> <span>تويتر</span></a>
+                <a href="https://wa.me//966505661617" target="_blank"><i class="fa-brands fa-square-whatsapp"></i>واتساب</a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i>انستقرام</a>
+                <a href=""><i class="fa-brands fa-tiktok"></i>تيك توك</a>
+            </div>
+        </div>
+    </footer>
+    <hr>
+    <div class="diiv">
+        <p> الحقوق محفوظة | 2024 متجر داتا</p>
+    </div>
+  
+</div>
+
+
+
+        <!-- Aos JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- Initialize Aos -->
+        <script>
+            AOS.init();
+        </script>
+        <!-- Gsap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+        <!-- ========= Custom Javascript link ========= -->
+        <script src="assets/JavaScript/gasp.js"></script>
+        <script src="assets/JavaScript/main.js"></script>
+    </body>
+    
+    </html>
