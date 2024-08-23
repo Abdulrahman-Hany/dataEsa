@@ -1780,8 +1780,8 @@ footer .flex-col p {
 }
 
 @media (max-width: 500px) {
-    .dropdown-menu {
-        width: 100%;
+       .dropdown-menu {
+        width: 70%;
     }
 
     .header-ecs img {
